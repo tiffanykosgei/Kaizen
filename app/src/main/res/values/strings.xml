@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kaizen Wellness Centre</string>
+    <string name="patient_name_hint">Patient\'s Name</string>
+
+</resources>
