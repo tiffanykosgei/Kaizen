@@ -12,6 +12,7 @@ junit = "4.13.2"
 kotlin = "2.0.0"  # Version compatible with Compose 1.6.0
 lifecycleRuntimeKtxVersion = "2.8.7"
 composeCompiler = "1.6.0"
+firebaseDatabaseVersion = "21.0.0"
 
 [libraries]
 androidx-activity-compose-v182 = { module = "androidx.activity:activity-compose", version.ref = "activityComposeVersion" }
@@ -30,6 +31,7 @@ ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
 ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabaseVersion" }
 
 [plugins]
 

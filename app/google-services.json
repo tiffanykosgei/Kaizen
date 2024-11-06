@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "378306743670",
+    "project_id": "kaizen-74d1f",
+    "storage_bucket": "kaizen-74d1f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378306743670:android:1059f0e1981404d43afe57",
+        "android_client_info": {
+          "package_name": "com.example.kaizenwellnesscentre"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm5d5bb91AKcDIT3UkL2rPvRtfwF8fmaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

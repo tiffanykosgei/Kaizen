@@ -1,53 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:fillViewport="true">
 
-    <EditText
-        android:id="@+id/patientsName"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:minHeight="48dp"
-        android:hint="@string/patient_name_hint" />
+        android:orientation="vertical"
+        android:padding="20dp">
 
+        <!-- Patient's Name Label and Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_name_hint"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/patient_name_hint">
 
-    <EditText
-        android:id="@+id/phoneNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:padding="16dp"
-        android:minHeight="48dp"
-        android:hint="Phone Number" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/patientsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="16dp"
+                android:hint="@string/patient_name_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <AutoCompleteTextView
-        android:id="@+id/doctorName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:minHeight="48dp"
-        android:hint="Doctor's Name" />
+        <!-- Phone Number Label and Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number_label"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp" />
 
-    <DatePicker
-        android:id="@+id/datePicker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number_hint">
 
-    <TimePicker
-        android:id="@+id/timePicker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:timePickerMode="spinner" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:padding="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/submitButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Submit" />
-</LinearLayout>
+        <!-- Doctor's Name Label and Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doctor_name_label"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp" />
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/doctor_name_hint">
+
+            <AutoCompleteTextView
+                android:id="@+id/doctorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Date Label and Picker -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_label"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Time Label and Picker -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_label"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button_text"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

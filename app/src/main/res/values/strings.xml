@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Kaizen Wellness Centre</string>
-    <string name="patient_name_hint">Patient\'s Name</string>
-
+    <string name="patient_name_hint">Enter Patient\'s Name</string>
+    <string name="phone_number_label">Phone Number</string>
+    <string name="phone_number_hint">Enter Phone Number</string>
+    <string name="doctor_name_label">Doctor\'s Name</string>
+    <string name="doctor_name_hint">Select Doctor\'s Name</string>
+    <string name="date_label">Date</string>
+    <string name="time_label">Time</string>
+    <string name="submit_button_text">Submit</string>
 </resources>
